@@ -9,6 +9,7 @@ builder.Services.AddDbContext<CIPAContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
+builder.Services.AddScoped<CandidatoService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 

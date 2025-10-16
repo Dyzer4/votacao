@@ -1,7 +1,10 @@
 namespace VotacaoAPI.DTO;
 
-public class CandidatosResponse
+public class CandidatoAprovadoDto
 {
-    public Guid Id { get; set; }
-    public string NomeCandidato { get; set; }
+    public int IdCandidato { get; set; }
+    public string NomeColaborador { get; set; }
+    public string? AreaOuSetor { get; set; }
+    public string? URLDaFoto { get; set; }
+
 }

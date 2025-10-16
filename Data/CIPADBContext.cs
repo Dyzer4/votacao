@@ -14,6 +14,7 @@ namespace VotacaoAPI.Data
         public DbSet<ColaboradorModel> Colaboradores { get; set; }
         public DbSet<CipaModel> Cipas { get; set; }
         public DbSet<VotoModel> Votos { get; set; }
+        public DbSet<CandidatoModel> Candidatos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
