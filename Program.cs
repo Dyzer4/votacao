@@ -1,15 +1,19 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using VotacaoAPI.Data;
+using VotacaoAPI.interfaces;
 using VotacaoAPI.Services;
+using VotacaoAPI.Mapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<CIPAContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionArthur"))
 );
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<CandidatoService>();
+builder.Services.AddScoped<IVotacaoService, VotacaoService>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 

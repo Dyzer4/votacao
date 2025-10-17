@@ -1,6 +1,13 @@
+using VotacaoAPI.Model;
+
 namespace VotacaoAPI.DTO;
 
 public class VotoRequest
 {
-    public Guid IdCandidato { get; set; }
+    public int IdCandidatoVotado { get; set; }
+    
+    public int IdCipa { get; set; }
+
+    public Boolean TipoVoto { get; set; }
+    
 }

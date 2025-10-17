@@ -35,6 +35,9 @@ public class VotoModel
         [Column("IdentificadorDoDispositivo")]
         [StringLength(50)]
         public string? IdentificadorDoDispositivo { get; set; }
+        
+        [Column("TipoVoto")]
+        public Boolean TipoVoto { get; set; }
 
         // ====== RELACIONAMENTOS ======
 
