@@ -1,0 +1,22 @@
+tirar descrição do candidato
+
+tabela de eleitores por cipa,  porque precisa definir também os colaboradores externos
+
+proposta de log
+uma única tabela de logs para o sistema inteiro urando override do entity framework
+
+ele vai confirmar a questão de numero de matricula como chave primaria
+usar id para esse sistema e trabalhar sobre ele pra evitar problemas de automatização
+
+vai receber um código otp pra confirmação de voto
+
+todos irão fazer login por email tivit
+
+mfa azure ad Microsoft autenticator
+
+usar mesmo nome no banco, para o backend
+
+otp
+
+
+
